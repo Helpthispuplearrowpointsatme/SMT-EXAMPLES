@@ -66,6 +66,7 @@
 (select S (bvxor #b01000100 (select S (bvxor #b01101111 (select S (bvxor #b01101110 (select S (bvxor #b01101110 (select S (bvxor #b01111001 (select S (bvxor #b00100000 (select S (bvxor #b01001011 (select S (bvxor #b01110010 (select S (bvxor #b01100001 (select S (bvxor #b01101101 (select S (bvxor #b01100101 (select S (bvxor #b01110010 #b00000000))))))))))))))))))))))))
 (select S (bvxor #b01010010 (select S (bvxor #b01101111 (select S (bvxor #b01100010 (select S (bvxor #b01101001 (select S (bvxor #b01101110 (select S (bvxor #b00100000 (select S (bvxor #b01000011 (select S (bvxor #b01100001 (select S (bvxor #b01101101 (select S (bvxor #b01100001 (select S (bvxor #b01100011 (select S (bvxor #b01101000 (select S (bvxor #b01101111 #b00000000))))))))))))))))))))))))))
 ))
+; Check Satisfiability, it turns out brute force is faster 
 (check-sat)
 ; get the S-box.
 (get-model)
